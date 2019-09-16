@@ -1,2 +1,1 @@
-# this is a comment line
- Django >= 2.1.2
+Django >= 2.1.2
