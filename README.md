@@ -7,14 +7,13 @@ by Sukrita Kittipitayakorn.
 This project is consist of two sites.
 
     1. A site that lets people view polls and vote them.
+
     2. An admin site that you can add, change, and delete polls.
 
 ## Requirements
 
- The application requires
- * Python 3.6 or newer
- * Django 2.1.2 or newer
- * Python add-on modules as in [requirements.txt](requirements.txt)
+The application requires
+* Python add-on modules as in [requirements.txt](requirements.txt)
 
 ## Installing
 
@@ -49,11 +48,10 @@ This project uses Django and Django tutorial app to develop and get several conc
     - Fix some bugs
 
 ## How to Run
-    In Terminal
 
-    1. $ cd mysite
+    1. Open terminal and change directory to mysite: $ cd mysite
 
-    2. $ python3 manage.py runserver
+    2. The first time you run the application enter: $ python3 manage.py runserver
 
     3.1. If you want to go to admin site, go to this link http://127.0.0.1:8000/admin/
 
