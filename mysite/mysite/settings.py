@@ -16,9 +16,8 @@ from decouple import config, Csv
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=True, cast=bool)
-SECRET_KEY = 'fnwa#bzbm^21!gk%33+6rqq=((z@966=rhg2s1y57(d=*i6ck5'
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
+ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'polls.apps.PollsConfig',
