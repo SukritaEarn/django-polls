@@ -1,7 +1,7 @@
 import datetime
 from django.db import models
 from django.utils import timezone
-# Create your models here.
+
 class Question(models.Model):
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
@@ -19,3 +19,11 @@ class Choice(models.Model):
     def __str__(self):
         return self.choice_text
 
+def vote_count(id):
+    votes = 0
+    for choice in Question.objects.get(pk=id).choice_set.all():
+        votes += choice.votes
+    return votes
+
+def find_polls_for_text(text):
+    return Question.objects.filter(question_text__contains=text)
