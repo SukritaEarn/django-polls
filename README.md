@@ -53,13 +53,9 @@ This project uses Django and Django tutorial app to develop and get several conc
 
     2. The first time you run the application enter: $ python3 manage.py runserver
 
-    3.1. If you want to go to admin site, go to this link http://127.0.0.1:8000/admin/
+    3. Open this link http://127.0.0.1:8000/polls/
 
-    3.2. If you want to go to polls site, use this link http://127.0.0.1:8000/polls/
-
-    4.1. In the admin site, you can manage your questions and choices there.
-
-    4.2. In the polls site, you will see two questions, click the questions and vote one of 
+    4. In the polls site, you will see two questions, click the questions and vote one of 
     the choices in there.
     
     5. You can see the result after you click vote.
