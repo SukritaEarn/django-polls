@@ -1,2 +1,2 @@
-Python 3.6 or newer
-Django 2.1.2 or newer
+Python >= 3.6
+Django >= 2.1.2
