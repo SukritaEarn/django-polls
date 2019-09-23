@@ -3,4 +3,4 @@ from django.urls import reverse
 
 def index(request):
     # redirect user to the polls index
-    return HttpResponseRedirect(reverse('/polls/'))
+    return HttpResponseRedirect(reverse('polls:index'))
