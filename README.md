@@ -55,29 +55,25 @@ This project uses Django and Django tutorial app to develop and get several conc
         
         $ pip3 install -r requirements.txt
 
-4. Create a virtualenv directory named .env
-        
-        $ virtualenv env
-
-5. Database migrations
+4. Database migrations
 
         $ python3 manage.py migrate
 
-6. Run server
+5. Run server
 
         $ python3 manage.py runserver
 
-7. In web browser open this link
+6. In web browser open this link
         
         http://127.0.0.1:8000/
 
     Note: You will see There's no polls avaibles. You can add you own questions and choices by creating an admin user.
 
-8. Create an admin user
+7. Create an admin user
 
         $ python manage.py createsuperuser
 
-9. Enter your desired username, email address and password 
+8. Enter your desired username, email address and password 
 
         Username: admin
 
@@ -87,6 +83,6 @@ This project uses Django and Django tutorial app to develop and get several conc
         Password (again): *********
         Superuser created successfully.
 
-10. After finish creating an admin user, run server again. Now, go to this link
+9. After finish creating an admin user, run server again. Now, go to this link
         
         http://127.0.0.1:8000/admin/    
