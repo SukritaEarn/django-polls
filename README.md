@@ -6,19 +6,13 @@ by Sukrita Kittipitayakorn.
 
 This project is consist of two sites.
 
-    1. A site that lets people view polls and vote them.
+    1. An admin site that you can add, change, and delete your questions and choices.
 
-    2. An admin site that you can add, change, and delete polls.
+    2. A polls site that shows your questions and choices, after you add them in the admin site.
 
 ## Requirements
 
-The application requires
-* Python add-on modules as in [requirements.txt](requirements.txt)
-
-## Installing
-
-I use Django to create this poll application.
-You can install Django from this [Install Guide](https://docs.djangoproject.com/en/2.2/intro/install/).
+The application requires python add-on modules as in [requirements.txt](requirements.txt)
 
 ## Built With
 
@@ -49,14 +43,50 @@ This project uses Django and Django tutorial app to develop and get several conc
 
 ## How to Run
 
-    1. Open terminal and change directory to mysite: $ cd mysite
+1. Clone the repository
 
-    2. The first time you run the application enter: $ python3 manage.py runserver
+        $ git clone https://github.com/SukritaEarn/django-polls
 
-    3. Open this link http://127.0.0.1:8000/polls/
+2. Change directory to django-polls
+        
+        $ cd /some/directory/django-polls
 
-    4. In the polls site, you will see two questions, click the questions and vote one of 
-    the choices in there.
-    
-    5. You can see the result after you click vote.
-    
+3. Install requirements
+        
+        $ pip3 install -r requirements.txt
+
+4. Create a virtualenv directory named .env
+        
+        $ virtualenv env
+
+5. Database migrations
+
+        $ python3 manage.py migrate
+
+6. Run server
+
+        $ python3 manage.py runserver
+
+7. In web browser open this link
+        
+        http://127.0.0.1:8000/
+
+    Note: You will see There's no polls avaibles. You can add you own questions and choices by creating an admin user.
+
+8. Create an admin user
+
+        $ python manage.py createsuperuser
+
+9. Enter your desired username, email address and password 
+
+        Username: admin
+
+        Email address: admin@example.com
+
+        Password: **********
+        Password (again): *********
+        Superuser created successfully.
+
+10. After finish creating an admin user, run server again. Now, go to this link
+        
+        http://127.0.0.1:8000/admin/    
